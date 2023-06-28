@@ -1,0 +1,11 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+//   "eslint.nodePath": "./node_modules",
+//   "typescript.tsdk": "./node_modules/typescript/lib",
+  "files.exclude": {
+    // ".husky": true,
+  }
+}
