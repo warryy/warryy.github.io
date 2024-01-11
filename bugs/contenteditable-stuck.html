@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .text {
+        font-size: 40px;
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: red;
+        text-align: center;
+      }
+    </style>
+    <div>chrome 浏览器打开控制台, 然后快速循环点击下面两个 div, 页面会卡死</div>
+    <div>
+      电脑系统: macOs ventura 13.0, chrome 版本: 120.0.6099.129（正式版本） (arm64)
+    </div>
+    <div contenteditable class="text jstext">某某某品牌双人餐</div>
+    <div contenteditable class="text jstext">立减10元</div>
+    <script>
+      /**
+       * 加了以下代码也不会好
+       * /
+      // const doms = document.querySelectorAll('.jstext')
+      // for (const d of doms) {
+      //   d.addEventListener('click', function (e) {
+      //     for (const dd of doms) {
+      //       d.setAttribute('contenteditable', false)
+      //     }
+      //     e.target.setAttribute('contenteditable', true)
+      //     e.target.focus()
+      //   })
+      // }
+    </script>
+  </body>
+</html>
